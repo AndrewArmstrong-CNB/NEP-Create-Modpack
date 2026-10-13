@@ -15,7 +15,6 @@ A Create-focused modpack for the **NEP Gaming** community server, built on top o
 1. Install the [Modrinth App](https://modrinth.com/app).
 2. Open the [NEP Create Modpack](https://modrinth.com/modpack/nep-create-modpack) page and click **Install**.
 3. Give the instance at least **8 GB of RAM** (Instance settings > Java and memory).
-4. Launch and join `create.nepgaming.com.br`.
 
 **Optional client mods:** Distant Horizons, SSRD, Iris and Colorwheel can be turned off in the Modrinth App if your PC struggles. Shaders are off by default; enable them in the Iris menu.
 

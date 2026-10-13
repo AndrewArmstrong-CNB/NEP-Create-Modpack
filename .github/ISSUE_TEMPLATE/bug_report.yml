@@ -1,0 +1,38 @@
+name: Bug / crash
+description: Something broke, crashed or behaves wrong
+labels: [bug]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Modpack version
+      placeholder: "1.1.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where did it happen?
+      options:
+        - On the server (create.nepgaming.com.br)
+        - Singleplayer
+        - Game does not start
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you were doing, what you expected and what happened instead. Coordinates help.
+    validations:
+      required: true
+  - type: input
+    id: log
+    attributes:
+      label: Crash report or log link
+      description: Upload crash-reports/*.txt or logs/latest.log to https://mclo.gs and paste the link.
+      placeholder: https://mclo.gs/...
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots / extra info

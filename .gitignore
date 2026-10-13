@@ -1,0 +1,4 @@
+*.mrpack
+*.zip
+NEP_AMP/
+__pycache__/

@@ -1,0 +1,27 @@
+name: Mod suggestion
+description: Suggest a mod to add, remove or update
+labels: [suggestion]
+body:
+  - type: input
+    id: link
+    attributes:
+      label: Mod link (Modrinth or CurseForge)
+    validations:
+      required: true
+  - type: dropdown
+    id: action
+    attributes:
+      label: Suggestion
+      options:
+        - Add
+        - Remove
+        - Update
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why?
+      description: What it adds to the pack, and whether it needs to be on the server.
+    validations:
+      required: true

@@ -1,0 +1,35 @@
+NEP Create Modpack 1.1.0 - pacote do servidor
+=============================================
+
+Requisitos: Minecraft 1.21.1, NeoForge 21.1.256, Java 21, 6-8 GB de RAM.
+
+A) Servidor que JA roda o Create+ (atualizar)
+ 1. Pare o servidor. Faca BACKUP do mundo e das pastas mods e config.
+ 2. Confira se o NeoForge do servidor e o 21.1.256. Se for outro, siga o passo B.2.
+ 3. Tire a pasta mods antiga (ex.: renomeie para mods_backup).
+ 4. Copie install-mods.sh (Linux) ou install-mods.ps1 (Windows) para a pasta do servidor e rode:
+      Linux:   ./install-mods.sh
+      Windows: powershell -ExecutionPolicy Bypass -File install-mods.ps1
+    O script baixa os 164 mods do Modrinth e confere o SHA1 de cada um.
+    Pode rodar de novo: o que ja estiver certo e pulado.
+ 5. Copie a pasta config deste pacote para o servidor. Se o servidor ja tem configs
+    ajustadas (DistantHorizons.toml, waystones, gravestone), NAO substitua essas:
+    copie so os arquivos que ainda nao existem.
+ 6. Inicie o servidor e confira o logs/latest.log.
+
+B) Servidor NOVO (do zero)
+ 1. Instale o Java 21.
+ 2. Baixe o instalador do NeoForge 21.1.256:
+      https://maven.neoforged.net/releases/net/neoforged/neoforge/21.1.256/neoforge-21.1.256-installer.jar
+    e rode na pasta do servidor:
+      java -jar neoforge-21.1.256-installer.jar --installServer
+ 3. Copie para a pasta: install-mods.sh/.ps1, a pasta config e o user_jvm_args.txt
+    (memoria: -Xms4G -Xmx8G; ajuste conforme sua maquina).
+ 4. Rode o script de mods (passo A.4).
+ 5. Abra o eula.txt e mude para eula=true (aceitando a EULA do Minecraft).
+ 6. Inicie com run.sh (Linux) ou run.bat (Windows), gerados pelo instalador.
+
+Observacoes
+ - Distant Horizons e SSRD vao no servidor. Eles sao opcionais para os jogadores.
+ - JEI, resource packs, Iris, Colorwheel e mods visuais ficam so no cliente
+   (lista em mods-somente-cliente.txt).
